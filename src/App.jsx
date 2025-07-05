@@ -72,14 +72,43 @@ function App() {
         <div className={`bg-layer ${selectedSection === 'personal' ? 'visible' : ''} bg-personal`} />
       </div>
 
+      <div className="site-header">
+  <div className="header-content">
+    <div className="name">Keivan Jiang</div>
+    <div className="header-links">
+      <a href="mailto:keivanjiangm@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/keivan-jiang/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </div>
+
+  <div className="nav-buttons">
+    <button
+      onClick={() => setSelectedSection('dev')}
+      className={selectedSection === 'dev' ? 'active' : ''}
+    >
+      Dev
+    </button>
+    <button
+      onClick={() => setSelectedSection('design')}
+      className={selectedSection === 'design' ? 'active' : ''}
+    >
+      Design
+    </button>
+    <button
+      onClick={() => setSelectedSection('personal')}
+      className={selectedSection === 'personal' ? 'active' : ''}
+    >
+      Personal
+    </button>
+  </div>
+</div>
+
+
+
       {/* Main App Container */}
       <div className="app-container">
-        {/* Nav Buttons */}
-        <div className="nav-buttons">
-          <button onClick={() => setSelectedSection('dev')}>Dev</button>
-          <button onClick={() => setSelectedSection('design')}>Design</button>
-          <button onClick={() => setSelectedSection('personal')}>Personal</button>
-        </div>
+
+
 
         {/* Typing Animated Intro */}
         <h1>
