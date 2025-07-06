@@ -1,8 +1,20 @@
-export default function DevSection() {
+import ProjectCard from './ProjectCard'
+import devProjects from '../data/devProjects';
+
+
+function DevSection() {
   return (
+    
     <div>
-      <h2>My Development Projects</h2>
-      <p>This is where my coding work will be displayed.</p>
+
+<h2>Check out some of my work:</h2>
+
+      {devProjects.map((project, index) => (
+        <ProjectCard key={index} {...project} />
+      ))}
     </div>
   );
 }
+
+
+export default DevSection;
