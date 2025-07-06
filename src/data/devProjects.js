@@ -11,7 +11,7 @@ const devProjects = [
     stack: ["React" , "Vite" , "CSS", "Modules"],
     description: "The site you're looking at right now — built to showcase my work and style.",
     image: "/images/portfolio.png",
-    link: "https://your-portfolio-link.vercel.app"
+    link: ""
   }
 ];
 

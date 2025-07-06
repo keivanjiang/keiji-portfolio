@@ -48,3 +48,22 @@
   border-radius: 8px;
   object-fit: cover;
 }
+
+.design-card img {
+  width: 100%;            /* scales with container */
+  max-width: 200px;       /* ✅ prevents it from being too wide */
+  height: auto;           /* keeps natural aspect ratio */
+  border-radius: 50px;     /* optional: soft corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  /* optional: subtle depth */
+  object-fit: cover;      /* trims overflow nicely */
+}
+
+.design-card {
+  max-width: 600px;
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.288);
+  border-radius: 12px;
+  text-align: center;
+}

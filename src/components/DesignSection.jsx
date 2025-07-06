@@ -4,7 +4,7 @@ const designProjects = [
   {
     title: "IPA Can Redesign",
     description: "A packaging project for a fictional IPA.",
-    preview: "/design/ipa-preview.jpg",
+    preview: "/images/ipa-preview.jpg",
     fullText: "This redesign explores brand identity across different formats...",
     images: [
       "/images/ipa-wrap.jpg",
